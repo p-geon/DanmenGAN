@@ -55,7 +55,7 @@ class Generator:
         self.FIXED_NOISE_FOR_PREDICT = np.random.normal(0, 1, (1, self.NOISE_DIM))
 
         self.model = self.build_generator()
-        self.model.load_weights("C:/Users/alche/Documents/Blender/model-I_x+75-24000.hdf5")
+        self.model.load_weights("C:/Users/.../Documents/Blender/model-I_x+75-24000.hdf5")
 
     def build_generator(self):
         z = z_in = tf.keras.layers.Input(shape=(self.NOISE_DIM, ), name="noise")
